@@ -7,67 +7,97 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 <style>
-	body {
-		padding: 0;
-		margin: 0;
-		background-color: #14293A;
-		font-family: 'Nunito', sans-serif;
-		font-weight: 600
-	}
-	wrapper {
-		width: 1366px;
-		margin: 0 auto;
-		display: block;
-		background-color: #FFCD82;
-	}
-	</style>
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #14293A;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    display: block;
+    background-color: #FFCD82;
+    padding: 20px;
+	width: 
+}
+h1 {
+    display: inline;
+}
+.logo {
+    vertical-align: middle;
+}
+header {
+    text-align: center;
+    background-color:#4D865B;
+}
+.container {
+    display: grid;
+    grid-template-columns: 35% 62%;
+    gap: 16px;
+}
+.banner {
+    display: block;
+    margin: auto;
+	width: 600px;
+	height: auto;
+	border-radius: 50%;
+	padding-top: 20px;
+}
+li {
+    padding-bottom: 10px;
+}
+</style>
 </head>
 <body>
 <wrapper>
-  <header> </header>
-  <img src="logo.png" alt="Fork and Flavor" width="100" class="logo"/>
-  <h1>Fork and Flavor</h1>
+  <header> <img src="logo.png" alt="Fork and Flavor" width="100" class="logo"/>
+    <h1>Fork and Flavor</h1>
+  </header>
   <main> <img src="salmonteriyaki.jpg" alt="Teriyaki Salmon" width="300" class="banner"/>
     <h2>Teriyaki Baked Salmon</h2>
     <p>Meet your new weeknight favorite: Teriyaki Baked Salmon! Juicy, flaky salmon gets a generous brush of sweet, sticky teriyaki glaze before heading into the oven, where the sauce caramelizes into pure deliciousness. It’s savory, slightly sweet, garlicky, and ridiculously easy to make. Pair it with fluffy rice and your favorite veggies, and voilà—you’ve got a restaurant-worthy dinner without the restaurant-worthy effort!</p>
-    <section class="ingredients">
-      <h3>Ingredients</h3>
-      <h4>For the Salmon</h4>
-      <ul>
-        <li>2&frac12; lbs salmon fillet sliced into 2" wide slices</li>
-      </ul>
-      <h4>For the Teriyaki Sauce</h4>
-      <ul>
-        <li>3 Tbsp teriyaki sauce</li>
-        <li>3 Tbsp hoisin sauce</li>
-        <li>3 Tbsp soy sauce</li>
-        <li>1 Tbsp white vinegar</li>
-        <li>1 Tbsp sesame oil</li>
-        <li>&frac13; cup packed light brown sugar</li>
-        <li>2 large or 3 medium garlic cloves, minced</li>
-        <li>2 tsp freshly grated ginger, or 1/2 tsp ground ginger</li>
-      </ul>
-      <h4>For serving</h4>
-      <ul>
-        <li>Sesame seeds to garnish, optional</li>
-        <li>Green onion, chopped, optional</li>
-      </ul>
-    </section>
-    <section class="instructions">
-      <h3>Instructions</h3>
-      <h4>Prep</h4>
-      <ol>
-        <li>Grease a large rimmed baking sheet (cover with foil and then grease for easier clean-up). Preheat oven to 400&deg;F.</li>
-      </ol>
-      <h4>How to Make Dish</h4>
-      <ol>
-        <li>Combine sauce ingredients and stir until brown sugar is dissolved.</li>
-        <li>Place individual salmon slices in a mixing bowl. Pour the sauce over the salmon, cover with plastic wrap and let marinate 20 minutes (at room temp or refrigerated).</li>
-        <li>Transfer salmon to prepared baking sheet (keep the marinade). Bake at 400&deg;F for 12-16 min or until salmon is flaky and cooked through, bake times may vary by thickness of salmon.</li>
-        <li>While salmon is baking, transfer remaining marinade to a small sauce pan and bring to a boil then reduce heat to a simmer and cook, stirring occasionally until slightly thickened (3-4 min) then remove from heat.</li>
-        <li>Once salmon is out of the oven, brush with teriyaki syrup, then sprinkle with chopped green onion and sesame seeds as desired.</li>
-      </ol>
-    </section>
+    <div class="container">
+      <section class="ingredients">
+        <h3>Ingredients</h3>
+        <h4>For the Salmon</h4>
+        <ul>
+          <li>2&frac12; lbs salmon fillet sliced into 2" wide slices</li>
+        </ul>
+        <h4>For the Teriyaki Sauce</h4>
+        <ul>
+          <li>3 Tbsp teriyaki sauce</li>
+          <li>3 Tbsp hoisin sauce</li>
+          <li>3 Tbsp soy sauce</li>
+          <li>1 Tbsp white vinegar</li>
+          <li>1 Tbsp sesame oil</li>
+          <li>&frac13; cup packed light brown sugar</li>
+          <li>2 large or 3 medium garlic cloves, minced</li>
+          <li>2 tsp freshly grated ginger, or 1/2 tsp ground ginger</li>
+        </ul>
+        <h4>For serving</h4>
+        <ul>
+          <li>Sesame seeds to garnish, optional</li>
+          <li>Green onion, chopped, optional</li>
+        </ul>
+      </section>
+      <section class="instructions">
+        <h3>Instructions</h3>
+        <h4>Prep</h4>
+        <ol>
+          <li>Grease a large rimmed baking sheet (cover with foil and then grease for easier clean-up). Preheat oven to 400&deg;F.</li>
+        </ol>
+        <h4>How to Make Dish</h4>
+        <ol>
+          <li>Combine sauce ingredients and stir until brown sugar is dissolved.</li>
+          <li>Place individual salmon slices in a mixing bowl. Pour the sauce over the salmon, cover with plastic wrap and let marinate 20 minutes (at room temp or refrigerated).</li>
+          <li>Transfer salmon to prepared baking sheet (keep the marinade). Bake at 400&deg;F for 12-16 min or until salmon is flaky and cooked through, bake times may vary by thickness of salmon.</li>
+          <li>While salmon is baking, transfer remaining marinade to a small sauce pan and bring to a boil then reduce heat to a simmer and cook, stirring occasionally until slightly thickened (3-4 min) then remove from heat.</li>
+          <li>Once salmon is out of the oven, brush with teriyaki syrup, then sprinkle with chopped green onion and sesame seeds as desired.</li>
+        </ol>
+      </section>
+    </div>
   </main>
   <footer> </footer>
   <p>&copy; 2026, Alexa Murray</p>
