@@ -10,9 +10,9 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #14293A;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
+	background-color: #124115
 }
 wrapper {
     width: 1366px;
@@ -20,13 +20,17 @@ wrapper {
     display: block;
     background-color: #FFCD82;
     padding: 20px;
-	width: 
+	background-image: url("bg.jpeg");
+	background-size: 600px;
+	background-repeat: repeat;
 }
 h1 {
     display: inline;
+	color: aliceblue;
 }
 .logo {
     vertical-align: middle;
+	width: 150px;
 }
 header {
     text-align: center;
@@ -36,6 +40,7 @@ header {
     display: grid;
     grid-template-columns: 35% 62%;
     gap: 16px;
+	background-color:#67AC7D 
 }
 .banner {
     display: block;
@@ -45,19 +50,25 @@ header {
 	border-radius: 50%;
 	padding-top: 20px;
 }
+	.pitch {
+	background-color: #69B587
+	}
 li {
     padding-bottom: 10px;
 }
+	.footer {
+		background-color:#F1FCF2;
+	}
 </style>
 </head>
 <body>
 <wrapper>
-  <header> <img src="logo.png" alt="Fork and Flavor" width="100" class="logo"/>
+  <header> <img src="../P1/logo.png" alt="Fork and Flavor" width="100" class="logo"/>
     <h1>Fork and Flavor</h1>
   </header>
-  <main> <img src="salmonteriyaki.jpg" alt="Teriyaki Salmon" width="300" class="banner"/>
-    <h2>Teriyaki Baked Salmon</h2>
-    <p>Meet your new weeknight favorite: Teriyaki Baked Salmon! Juicy, flaky salmon gets a generous brush of sweet, sticky teriyaki glaze before heading into the oven, where the sauce caramelizes into pure deliciousness. It’s savory, slightly sweet, garlicky, and ridiculously easy to make. Pair it with fluffy rice and your favorite veggies, and voilà—you’ve got a restaurant-worthy dinner without the restaurant-worthy effort!</p>
+  <main> <img src="../P1/salmonteriyaki.jpg" alt="Teriyaki Salmon" width="300" class="banner"/>
+    <div class="pitch"> <h2>Teriyaki Baked Salmon</h2>
+    <p>Meet your new weeknight favorite: Teriyaki Baked Salmon! Juicy, flaky salmon gets a generous brush of sweet, sticky teriyaki glaze before heading into the oven, where the sauce caramelizes into pure deliciousness. It’s savory, slightly sweet, garlicky, and ridiculously easy to make. Pair it with fluffy rice and your favorite veggies, and voilà—you’ve got a restaurant-worthy dinner without the restaurant-worthy effort!</p> </div>
     <div class="container">
       <section class="ingredients">
         <h3>Ingredients</h3>
@@ -99,9 +110,10 @@ li {
       </section>
     </div>
   </main>
-  <footer> </footer>
+  <div class="footer"> <footer>
   <p>&copy; 2026, Alexa Murray</p>
   <p> This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious and should not be construed to be respresentative of actual products on the market in a similar product category.</p>
+ </footer> </div>
 </wrapper>
 </body>
 </html>
