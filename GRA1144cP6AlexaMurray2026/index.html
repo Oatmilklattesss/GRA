@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Student retail product page for TRIPP NYC Skull Zip Off Pants in three colors.">
+<title>Skull Zip Off Pants | TRIPP NYC</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #292929;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+#wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    background-color: white;
+}
+header {
+    background-color: #111;
+    color: white;
+    padding: 26px 60px;
+}
+header h1 {
+    margin: 0;
+    font-size: 46px;
+    letter-spacing: 3px;
+}
+header p {
+    margin: 4px 0 0;
+    color: #bbbbbb;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+nav {
+    background-color: #222;
+    padding: 0 55px;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 22px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+nav a:hover {
+    background-color: #ad1e2e;
+}
+main {
+    width: 1366px;
+    display: flex;
+    gap: 85px;
+    padding: 48px 75px 62px;
+}
+.product-photo {
+    width: 570px;
+    text-align: center;
+}
+.photo-box {
+    width: 570px;
+    height: 610px;
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+}
+.photo-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.photo-note {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #777777;
+}
+.product-info {
+    width: 480px;
+    padding-top: 13px;
+}
+.product-info h2 {
+    font-size: 36px;
+    margin: 0 0 14px;
+}
+.price {
+    font-size: 28px;
+    margin: 0 0 24px;
+}
+.description {
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.section-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0 12px;
+}
+.color-options {
+    display: flex;
+    gap: 14px;
+}
+.color-choice {
+    width: 88px;
+    padding: 8px 5px;
+    background-color: white;
+    border: 2px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 13px;
+}
+.color-choice:hover,
+.color-choice.selected {
+    border-color: #ad1e2e;
+}
+.swatch {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #666;
+    margin: 0 auto 8px;
+}
+.red { background: linear-gradient(90deg, #181818 50%, #bd1b2a 50%); }
+.purple { background: linear-gradient(90deg, #181818 50%, #8751ae 50%); }
+.white { background: linear-gradient(90deg, #181818 50%, #eeeeee 50%); }
+.view-buttons button {
+    background-color: #f5f5f5;
+    border: 1px solid #999;
+    padding: 11px 25px;
+    margin-right: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.view-buttons button:hover,
+.view-buttons button.selected {
+    color: white;
+    background-color: #222;
+}
+.details {
+    margin-top: 29px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+.shop-link {
+    display: inline-block;
+    margin-top: 23px;
+    padding: 15px 34px;
+    background-color: #ad1e2e;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.shop-link:hover {
+    background-color: #7d1521;
+}
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 23px 60px;
+    font-size: 13px;
+    text-align: center;
+}
+footer a { color: #eeeeee; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <header id="top">
+        <h1>TRIPP NYC</h1>
+        <p>DARK STREET CLOTHING</p>
+    </header>
+
+    <nav>
+        <a href="#top">HOME</a>
+        <a href="#product">PANTS</a>
+        <a href="#details">DETAILS</a>
+    </nav>
+
+    <main id="product">
+        <div class="product-photo">
+            <div class="photo-box">
+                <img id="pantsImage"
+                     src="https://trippnyc.com/cdn/shop/files/AF7049_BLACKREDSKULL_F2_1000x.jpg?v=1733168986"
+                     alt="Front of the black and red Skull Zip Off Pants"
+                     onmouseover="hoverPhoto(true)" onmouseout="hoverPhoto(false)">
+            </div>
+            <p class="photo-note">Hover over the photo to see the other side.</p>
+        </div>
+
+        <div class="product-info">
+            <h2>Skull Zip Off Pants</h2>
+            <p class="price">$138.00</p>
+            <p class="description">
+                Baggy black cargo pants with skull details, removable chains,
+                straps, and deep pockets. The legs zip off to turn the pants
+                into shorts.
+            </p>
+
+            <p class="section-label">Choose a color: <span id="colorName">Black / Red</span></p>
+            <div class="color-options">
+                <button class="color-choice selected" id="redButton" onclick="chooseColor('red')">
+                    <span class="swatch red"></span>Red
+                </button>
+                <button class="color-choice" id="purpleButton" onclick="chooseColor('purple')">
+                    <span class="swatch purple"></span>Purple
+                </button>
+                <button class="color-choice" id="whiteButton" onclick="chooseColor('white')">
+                    <span class="swatch white"></span>White
+                </button>
+            </div>
+
+            <p class="section-label">View:</p>
+            <div class="view-buttons">
+                <button id="frontButton" class="selected" onclick="chooseView('front')">Front</button>
+                <button id="backButton" onclick="chooseView('back')">Back</button>
+            </div>
+
+            <div class="details" id="details">
+                <strong>Product details</strong><br>
+                100% cotton<br>
+                Removable chains<br>
+                Adjustable ankles<br>
+                Zip-off legs<br>
+                Hand wash cold, lay flat to dry
+            </div>
+        </div>
+    </main>
+
+    <footer>
+		© 2026, Alexa Murray. This is a fictitious web page created solely for the purpose
+      of education and training. All products and people associated with this web page
+      are also fictitious. Any resemblance to real brands, products, or people is purely
+      coincidental. Information provided about the product is also fictitious and should
+      not be construed to be representative of actual products on the market in a similar
+      product category.
+    </footer>
+</div>
+
+<script>
+const pants = {
+    red: {
+        name: 'Black / Red',
+        front: 'https://trippnyc.com/cdn/shop/files/AF7049_BLACKREDSKULL_F2_1000x.jpg?v=1733168986',
+        back: 'https://trippnyc.com/cdn/shop/files/AF7049_BLACKREDSKULL_B2_1000x.jpg?v=1733168986',
+        link: 'https://trippnyc.com/products/skull-zip-off-pant-3'
+    },
+    purple: {
+        name: 'Black / Purple',
+        front: 'https://trippnyc.com/cdn/shop/products/AF7049_BLKPURPLESKULL_S_1000x.jpg?v=1649173869',
+        back: 'https://trippnyc.com/cdn/shop/products/AF7049_BLKPURPLESKULL_B.jpg?v=1649173869',
+        link: 'https://trippnyc.com/products/skull-zip-off-pant-4'
+    },
+    white: {
+        name: 'Black / White',
+        front: 'https://trippnyc.com/cdn/shop/products/AF7049_BLKWHT_F.jpg?v=1655996273',
+        back: 'https://trippnyc.com/cdn/shop/products/AF7049_BLKWHT_B.jpg?v=1655996273',
+        link: 'https://trippnyc.com/products/skull-zip-off-pant-white'
+    }
+};
+
+let color = 'red';
+let view = 'front';
+
+function showPhoto(side) {
+    const image = document.getElementById('pantsImage');
+    image.src = pants[color][side];
+    image.alt = side + ' view of ' + pants[color].name + ' Skull Zip Off Pants';
+}
+
+function chooseColor(newColor) {
+    color = newColor;
+    view = 'front';
+    document.getElementById('colorName').textContent = pants[color].name;
+    document.getElementById('shopLink').href = pants[color].link;
+    document.querySelectorAll('.color-choice').forEach(button => button.classList.remove('selected'));
+    document.getElementById(color + 'Button').classList.add('selected');
+    chooseView('front');
+}
+
+function chooseView(newView) {
+    view = newView;
+    document.getElementById('frontButton').classList.toggle('selected', view === 'front');
+    document.getElementById('backButton').classList.toggle('selected', view === 'back');
+    showPhoto(view);
+}
+
+function hoverPhoto(hovering) {
+    if (hovering) {
+        showPhoto(view === 'front' ? 'back' : 'front');
+    } else {
+        showPhoto(view);
+    }
+}
+</script>
+</body>
+</html>
